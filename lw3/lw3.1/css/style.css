@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none; }
+
+.clear {
+  clear: both; }
+
+body {
+  background-image: url(../images/backgroung.jpg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: -39px 50px; }
+
+.main_container {
+  width: 1000px;
+  margin: 0 auto; }
+
+.header {
+  width: 1000px;
+  margin: 0 auto; }
+  .header a {
+    font-size: 19px;
+    font-family: "Georgia";
+    color: #333333;
+    line-height: 1.684;
+    text-align: left;
+    text-decoration-line: none; }
+    .header a:hover {
+      color: whitesmoke; }
+  .header .about_me {
+    margin-left: 20px;
+    padding: 10px 22px 9px 45px;
+    float: left;
+    background-image: url(../images/me.png);
+    background-repeat: no-repeat;
+    background-position: 21px 17px;
+    transition: background-color .1s;
+    transition: background-image .1s; }
+    .header .about_me:hover {
+      background-color: #15a98c;
+      background-image: url(../images/me_white.png); }
+  .header .my_hobby {
+    padding: 10px 22px 9px 45px;
+    float: left;
+    background-image: url(../images/heart.png);
+    background-repeat: no-repeat;
+    background-position: 19px 18px;
+    transition: background-color .1s;
+    transition: background-image .1s; }
+    .header .my_hobby:hover {
+      background-color: #15a98c;
+      background-image: url(../images/heart_white.png); }
+  .header .favorite_films {
+    padding: 10px 22px 9px 45px;
+    float: left;
+    background-image: url(../images/video.png);
+    background-repeat: no-repeat;
+    background-position: 19px 18px;
+    transition: background-color .1s;
+    transition: background-image .1s; }
+    .header .favorite_films:hover {
+      background-color: #15a98c;
+      background-image: url(../images/video_white.png); }
+
+.sidebar {
+  width: 330px;
+  margin: 0 60px 0 20px;
+  float: left; }
+  .sidebar .image {
+    width: 330px;
+    height: 350px;
+    margin: 210px 0 40px;
+    border-radius: 5px; }
+  .sidebar h1 {
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    color: #15a98c;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 13px; }
+  .sidebar li {
+    font-size: 19px;
+    font-family: "Georgia";
+    color: #555555;
+    line-height: 1.895;
+    text-align: left;
+    margin: 0 0 0 20px; }
+  .sidebar .music {
+    padding-bottom: 40px; }
+  .sidebar .films h1 {
+    margin-bottom: 12px; }
+
+.text {
+  width: 570px;
+  float: right;
+  margin-right: 20px; }
+  .text blockquote {
+    margin: 235px 0 124px 3px; }
+    .text blockquote p {
+      font-size: 28px;
+      font-family: "Georgia";
+      color: white;
+      font-style: italic;
+      line-height: 1.5;
+      text-align: left;
+      height: auto;
+      margin-bottom: 2px; }
+    .text blockquote span {
+      font-size: 16px;
+      font-family: 'Open Sans', sans-serif;
+      color: white;
+      font-weight: 600;
+      line-height: 2.625;
+      text-align: left;
+      margin-left: 3px; }
+  .text h1 {
+    font-size: 48px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+    font-weight: 700;
+    line-height: 0.875;
+    text-align: left; }
+    .text h1::after {
+      display: block;
+      margin: 31px 0 44px 0;
+      content: "";
+      background-color: #45c3aa;
+      width: 60px;
+      height: 6px;
+      border-radius: 3px; }
+  .text h2 {
+    font-size: 36px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+    font-weight: 500;
+    line-height: 1.167;
+    text-align: left;
+    margin: 41px 0 16px -2px; }
+  .text p {
+    font-size: 19px;
+    font-family: "Georgia";
+    color: #555555;
+    line-height: 1.7;
+    text-align: left;
+    width: 508px; }
+  .text .link {
+    margin: 40px 0; }
+    .text .link a {
+      font-size: 19px;
+      font-family: "Georgia";
+      color: #15a98b;
+      text-decoration: none;
+      line-height: 1.684;
+      text-align: left; }
+    .text .link span {
+      text-decoration: underline; }
+
+.movies {
+  width: 1200px;
+  margin: 54px auto; }
+  .movies h2 {
+    font-size: 36px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #333333;
+    line-height: 1.167; }
+  .movies h3 {
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+    margin: 19px 0 17px -2px;
+    font-weight: 700;
+    line-height: 1.455;
+    text-align: left; }
+  .movies p {
+    font-size: 16px;
+    font-family: "Georgia";
+    color: #555555;
+    line-height: 1.75;
+    text-align: left;
+    width: auto; }
+  .movies img {
+    border-radius: 5px;
+    margin-top: 33px; }
+  .movies .block {
+    float: left;
+    width: 285px;
+    margin-right: 20px; }
+  .movies .last_block {
+    float: right;
+    width: 285px; }
+  .movies .bottom {
+    display: block;
+    padding: 9px 0 0;
+    margin: 54px 0 70px 480px;
+    background-color: #15a98c;
+    width: 220px;
+    height: 41px;
+    border-radius: 5px;
+    font-size: 19px;
+    font-family: "Georgia";
+    color: whitesmoke;
+    line-height: 1.684;
+    text-decoration-line: none;
+    text-align: center;
+    transition: background-color .1s; }
+    .movies .bottom:hover {
+      background-color: #098d72; }
+
+.footer {
+  height: 70px;
+  width: 100%;
+  background-color: whitesmoke; }
+  .footer p {
+    padding-top: 20px;
+    padding-right: 19px;
+    font-size: 16px;
+    font-family: "Georgia";
+    color: #555555;
+    line-height: 2;
+    text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

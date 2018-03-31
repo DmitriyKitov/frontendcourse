@@ -1,2 +1,2 @@
 # frontendcourse
-Корсы по frontend разработке
+Курсы по frontend разработке

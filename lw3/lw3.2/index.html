@@ -105,6 +105,40 @@
         </div>
         <div>
             <h2>Напиши мне</h2>
+            <form action="php/form_handler.php" method="get" class="film_rating_form">
+                <div class="form_row">
+                    <label for="username">Ваше имя:</label>
+                    <input type="text" name="username" id="username">
+                </div>
+                <div class="form_row">
+                    <label for="email">Ваш email:</label>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div class="form_row">
+                    <label for="favorite_film">Откуда вы?</label>
+                    <select name="favorite_film" id="favorite_film">
+                        <option value="russia">Россия</option>
+                        <option value="england">Англия</option>
+                        <option value="Ugand">Уганда</option>
+                    </select>
+                </div>
+                <div class="form_row">
+                    <p>Ваш пол</p>
+                    <div class="gender_container">
+                        <input name="rating" type="radio" value="male" id="checkBoxOne">
+                        <label for="checkBoxOne">Мужской</label>
+
+                        <input name="rating" type="radio" value="female" id="checkBoxTwo">
+                        <label for="checkBoxTwo">Женский</label>
+
+                    </div>
+                </div>
+                <div class="form_row">
+                    <label class="comment_label" for="comment">Ваше сообщение</label>
+                    <textarea id="comment" placeholder="Введите пару слов..." name="comment" rows="5"></textarea>
+                </div>
+                <input type="submit" value="Отправить" class="submit_form">
+            </form>
         </div>
         <div class="footer">
             <p>

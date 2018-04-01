@@ -74,7 +74,7 @@
                     <h3>Форрест Гамп</h3>
                     <p>
                         От лица главного героя Форреста Гампа, слабоумного безобидного человека с благородным и открытым сердцем, рассказывается история его необыкновенной жизни.
-                         Фантастическим образом превращается он в известного футболиста, героя войны, преуспевающего бизнесмена. Он становится миллиардером, но остается таким же бесхитростным, глупым и добрым. Форреста ждет постоянный успех во всем, а он любит девочку, с которой дружил в детстве, но взаимность приходит слишком поздно.
+                        Фантастическим образом превращается он в известного футболиста, героя войны, преуспевающего бизнесмена. Он становится миллиардером, но остается таким же бесхитростным, глупым и добрым. Форреста ждет постоянный успех во всем, а он любит девочку, с которой дружил в детстве, но взаимность приходит слишком поздно.
                     </p>
                 </div>
                 <div class="block">
@@ -103,40 +103,37 @@
             </div>
             <a href="#" class="button">Все фильмы</a>
         </div>
-        <div>
+        <div class="form">
             <h2>Напиши мне</h2>
-            <form action="php/form_handler.php" method="get" class="film_rating_form">
-                <div class="form_row">
+            <form action="#">
+               <div>
                     <label for="username">Ваше имя:</label>
                     <input type="text" name="username" id="username">
                 </div>
-                <div class="form_row">
+                <div>
                     <label for="email">Ваш email:</label>
                     <input type="text" name="email" id="email">
                 </div>
-                <div class="form_row">
-                    <label for="favorite_film">Откуда вы?</label>
-                    <select name="favorite_film" id="favorite_film">
+                <div>
+                    <label for="country">Откуда вы?</label>
+                    <select name="country" id="country">
                         <option value="russia">Россия</option>
                         <option value="england">Англия</option>
-                        <option value="Ugand">Уганда</option>
+                        <option value="ugand">Уганда</option>
                     </select>
                 </div>
-                <div class="form_row">
-                    <p>Ваш пол</p>
-                    <div class="gender_container">
-                        <input name="rating" type="radio" value="male" id="checkBoxOne">
-                        <label for="checkBoxOne">Мужской</label>
-
-                        <input name="rating" type="radio" value="female" id="checkBoxTwo">
-                        <label for="checkBoxTwo">Женский</label>
-                    </div>
+                <div>
+                    <label for="gender">Ваш пол</label>
+                    <input type="radio" name="gender">
+                    <span>Мужской</span>
+                    <input type="radio" name="gender">
+                    <span>Женский</span>
                 </div>
-                <div class="form_row">
-                    <label class="comment_label" for="comment">Ваше сообщение</label>
-                    <textarea id="comment" placeholder="Введите пару слов..." name="comment" rows="5"></textarea>
+                <div>
+                    <label for="comment">Ваше сообщение</label>
+                    <textarea id="comment" name="comment"></textarea>
+                    <input type="submit" value="Отправить" class="submit_form">
                 </div>
-                <input type="submit" value="Отправить" class="submit_form">
             </form>
         </div>
         <div class="footer">

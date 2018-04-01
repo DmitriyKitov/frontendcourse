@@ -43,7 +43,6 @@
         {
             border-radius: 5px;
             margin-top: 33px
-
         }
 
         .block
@@ -63,7 +62,7 @@
     .button
     {
         display: block;
-        padding: 9px 0 0;
+        padding-top: 9px;
         margin: 54px auto 0;
         background-color: rgb(21, 169, 140);
         width: 220px;
@@ -79,7 +78,7 @@
 
         &:hover
         {
-            background-color: rgb(9, 141, 114) ;
+            background-color: rgb(9, 141, 114);
         }
     }
 }

@@ -23,7 +23,7 @@
         margin-left: 20px;
         padding: 10px 22px 9px 45px;
         float: left;
-        background-image: url(../images/me.png);
+        background-image: url(../icons/about_me.png);
         background-repeat: no-repeat;
         background-position: 21px 17px;
         transition: background-color .1s;
@@ -32,7 +32,7 @@
         &:hover
         {
             background-color: rgb(21, 169, 140) ;
-            background-image: url(../images/me_white.png);
+            background-image: url(../icons/about_me_white.png);
         }
     }
     
@@ -40,7 +40,7 @@
     {
         padding: 10px 22px 9px 46px;
         float: left;
-        background-image: url(../images/heart.png);
+        background-image: url(../icons/hobby.png);
         background-repeat: no-repeat;
         background-position: 20px 18px;
         transition: background-color .1s;
@@ -49,7 +49,7 @@
         &:hover
         {
             background-color: rgb(21, 169, 140) ;
-            background-image: url(../images/heart_white.png);
+            background-image: url(../icons/hobby_white.png);
         }
     }
     
@@ -57,7 +57,7 @@
     {
         padding: 10px 22px 9px 44px;
         float: left;
-        background-image: url(../images/video.png);
+        background-image: url(../icons/films.png);
         background-repeat: no-repeat;
         background-position: 18px 18px;
         transition: background-color .1s;
@@ -66,7 +66,7 @@
         &:hover
         {
             background-color: rgb(21, 169, 140) ;
-            background-image: url(../images/video_white.png);
+            background-image: url(../icons/films_white.png);
         }
     }
 }

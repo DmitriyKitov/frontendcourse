@@ -1,0 +1,72 @@
+.header
+{
+    width: 1000px;
+    margin: 0 auto;
+    
+    a
+    {
+        font-size: 19px;
+        font-family: "Georgia";
+        color: rgb(51, 51, 51);
+        line-height: 1.684;
+        text-align: left;
+        text-decoration-line: none;
+       
+        &:hover
+        {
+            color: rgb(245, 245,245);
+        }
+    }
+    
+    .about_me
+    {
+        margin-left: 20px;
+        padding: 10px 22px 9px 45px;
+        float: left;
+        background-image: url(../images/me.png);
+        background-repeat: no-repeat;
+        background-position: 21px 17px;
+        transition: background-color .1s;
+        transition: background-image .1s;
+        
+        &:hover
+        {
+            background-color: rgb(21, 169, 140) ;
+            background-image: url(../images/me_white.png);
+        }
+    }
+    
+    .my_hobby
+    {
+        padding: 10px 22px 9px 46px;
+        float: left;
+        background-image: url(../images/heart.png);
+        background-repeat: no-repeat;
+        background-position: 20px 18px;
+        transition: background-color .1s;
+        transition: background-image .1s;
+        
+        &:hover
+        {
+            background-color: rgb(21, 169, 140) ;
+            background-image: url(../images/heart_white.png);
+        }
+    }
+    
+    .favorite_films
+    {
+        padding: 10px 22px 9px 44px;
+        float: left;
+        background-image: url(../images/video.png);
+        background-repeat: no-repeat;
+        background-position: 18px 18px;
+        transition: background-color .1s;
+        transition: background-image .1s;
+        
+        &:hover
+        {
+            background-color: rgb(21, 169, 140) ;
+            background-image: url(../images/video_white.png);
+        }
+    }
+}

@@ -1,0 +1,85 @@
+.movies
+{
+    width: 100%;
+    background-color: rgb(249, 249, 249);
+    padding: 36px 0 60px;
+    
+    .blocks
+    {
+        width: 1200px;
+        margin: 0 auto;
+
+        h2
+        {
+            font-size: 36px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            color: rgb(51, 51, 51);
+            line-height: 1.167;
+        }
+
+        h3
+        {
+            font-size: 22px;
+            font-family: 'Open Sans', sans-serif;
+            color: rgb(51, 51, 51);
+            margin: 19px 0 17px -2px;
+            font-weight: 700;
+            line-height: 1.455;
+            text-align: left;
+        }
+
+        p
+        {
+            font-size: 16px;
+            font-family: "Georgia";
+            color: rgb(85, 85, 85);
+            line-height: 1.75;
+            text-align: left;
+            width: auto;
+        }
+
+        img
+        {
+            border-radius: 5px;
+            margin-top: 33px
+
+        }
+
+        .block
+        {
+            float: left;
+            width: 285px;
+            margin-right: 20px;
+        }
+
+        .last_block
+        {
+            float: right;
+            width: 285px;
+        }
+    }
+        
+    .bottom
+    {
+        display: block;
+        padding: 9px 0 0;
+        margin: 54px auto 0;
+        background-color: rgb(21, 169, 140);
+        width: 220px;
+        height: 41px;
+        border-radius: 5px;
+        font-size: 19px;
+        font-family: "Georgia";
+        color: rgb(245, 245, 245);
+        line-height: 1.684;
+        text-decoration-line: none;
+        text-align: center;
+        transition: background-color .1s;
+
+        &:hover
+        {
+            background-color: rgb(9, 141, 114) ;
+        }
+    }
+}

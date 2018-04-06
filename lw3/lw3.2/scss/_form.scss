@@ -1,0 +1,215 @@
+.form
+{
+    margin:0 auto 50px;
+    width: 700px;
+
+    h2
+    {
+        font-size: 36px;
+        font-weight: 300;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        color: rgb(51, 51, 51);
+        line-height: 1.167;
+        margin:0 auto;
+        padding: 45px 0 0 0;
+
+        &::before
+        {
+            display: inline-block;
+            content: "";
+            width: 200px;
+            height: 1px;
+            background-color: #c4c4c4;
+            margin: 0 27px 12px 0;
+        }
+
+        &::after
+        {
+            @extend ::before;
+            margin: 0 0 12px 24px;
+        }
+    }
+}
+
+form
+{
+    width: 500px;
+    margin: 68px 0 0 86px;
+
+    label
+    {
+        margin-top: 27px;
+        font-size: 20px;
+        font-family: 'Open Sans', sans-serif;
+        color: rgb(51, 51, 51);
+        line-height: 1.6;
+        text-align: left;
+        
+        &:not(.not_require):after
+        {
+            display: inline-block;
+            content: "*";
+            color: red;
+            margin-left: 5px;
+        }
+    }
+    
+    #email, #username
+    {
+        height: 48px;
+        width: 100%;
+        padding: 0 18px;
+        border: 2px solid #c9c9c9;
+        border-radius: 3px;
+        transition: border-color .3s ease-in-out;
+        margin: 1px 0 24px 0;
+        
+        &:hover
+        {
+            border-color: #a6a6a6;
+        }
+        
+        &:focus
+        {
+            border-color: #15a98c;
+        }
+    }
+  
+
+    select
+    {
+        margin: 5px 0 25px 0;
+        height: 48px;
+        width: 540px;
+        padding: 0 16px;
+        border: 2px solid #c9c9c9;
+        border-radius: 3px;
+        
+        font-size: 18px;
+        font-family: 'Open Sans', sans-serif;
+        color: rgb(85, 85, 85);
+        line-height: 1.778;
+        text-align: left;
+
+        -webkit-appearance: none;
+        cursor: inherit;
+        
+        transition: border-color .3s;
+        
+        &:hover
+        {
+            border-color: #a6a6a6;
+        }
+        
+        &:focus
+        {
+            border-color: #15a98c;
+        }
+    }
+    
+    .select_wrapper
+    {
+        cursor: pointer;
+        position: relative;
+
+        &:after
+        {
+            content: '';
+            pointer-events: none;
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top: calc(25px);
+            right: -20px;
+            display: block;
+            border: solid #c9c9c9;
+            border-width: 0 2px 2px 0;
+            transform: translateY(-50%) rotate(45deg);
+        }
+    }
+
+    .gender
+    {
+        margin: 17px 0 0 0;
+        
+        h3
+        {
+            font-size: 20px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 500;
+            color: rgb(51, 51, 51);
+            line-height: 1.6;
+            text-align: left;
+        }
+        
+        input
+        {
+            margin: 15px 0 0 0;
+        }
+        
+        label
+        {
+            font-size: 18px;
+            font-family: 'Open Sans', sans-serif;
+            color: rgb(51, 51, 51);
+            line-height: 1.778;
+            text-align: left;
+
+            cursor: pointer;
+            margin: 0 36px 0 5px;
+        }
+    }
+    
+    .message
+    {
+        margin: 35px 0 0 0;
+        
+        textarea
+        {
+            height: 117px;
+            width: 506px;
+            padding: 15px 15px;
+            border: 2px solid #c9c9c9;
+            border-radius: 3px;
+            transition: border-color .3s ease-in-out;
+            resize: none;
+            margin: 5px 0 25px 0;
+            
+            font-size: 18px;
+            font-family: 'Open Sans', sans-serif;
+            color: rgb(85, 85, 85);
+            line-height: 1.778;
+            text-align: left;
+
+            &:hover
+            {
+                border-color: #a6a6a6;
+            }
+
+            &:focus
+            {
+                border-color: #15a98c;
+            }
+        }
+        
+        input
+        {
+            margin: 20px 0 0 0;
+            border-radius: 5px;
+            padding: 9px 63px;
+            background-color: #15a98c;
+            
+            font-size: 19px;
+            font-family: "Georgia";
+            color: rgb(245, 245, 245);
+            line-height: 1.684;
+            text-align: left;
+
+            &:hover
+            {
+                background-color: #098d72;
+            }
+        }
+    }
+}

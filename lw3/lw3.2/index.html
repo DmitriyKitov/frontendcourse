@@ -4,7 +4,7 @@
         <title>Страница о себе</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     </head>
     <body>
         <div class="header">
@@ -104,34 +104,36 @@
             <a href="#" class="button">Все фильмы</a>
         </div>
         <div class="form">
-            <h2>Напиши мне</h2>
+            <h2>НАПИШИ МНЕ</h2>
             <form action="#">
                 <div>
-                    <label for="username">Ваше имя:</label>
+                    <label for="username">Ваше имя</label>
                     <input type="text" name="username" id="username">
                 </div>
                 <div>
-                    <label for="email">Ваш email:</label>
+                    <label for="email">Ваш email</label>
                     <input type="text" name="email" id="email">
                 </div>
                 <div>
-                    <label for="country">Откуда вы?</label>
-                    <select name="country" id="country">
-                        <option value="russia">Россия</option>
-                        <option value="england">Англия</option>
-                        <option value="ugand">Уганда</option>
-                    </select>
+                    <label for="country" class="not_require">Откуда вы?</label>
+                    <div class="select_wrapper">
+                        <select name="country" id="country">
+                            <option value="russia">Россия</option>
+                            <option value="england">Англия</option>
+                            <option value="ugand">Уганда</option>
+                        </select>
+                    </div>
                 </div>
-                <div>
-                    <label for="gender">Ваш пол</label>
-                    <input type="radio" name="gender">
-                    <span>Мужской</span>
-                    <input type="radio" name="gender">
-                    <span>Женский</span>
+                <div class="gender">
+                    <h3>Ваш пол</h3>
+                    <input type="radio" name="gender" value="male" id="male">
+                    <label class="not_require" for="male">Мужской</label>
+                    <input type="radio" name="gender" value="female" id="female">
+                    <label class="not_require" for="female">Женский</label>
                 </div>
-                <div>
+                <div class="message">
                     <label for="comment">Ваше сообщение</label>
-                    <textarea id="comment" name="comment"></textarea>
+                    <textarea id="comment" name="comment" rows="5"></textarea>
                     <input type="submit" value="Отправить" class="submit_form">
                 </div>
             </form>

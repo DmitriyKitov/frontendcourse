@@ -34,12 +34,12 @@
 
 form
 {
-    width: 500px;
+    width: 540px;
     margin: 68px 0 0 86px;
 
     label
     {
-        margin-top: 27px;
+        
         font-size: 20px;
         font-family: 'Open Sans', sans-serif;
         color: rgb(51, 51, 51);
@@ -57,13 +57,20 @@ form
     
     #email, #username
     {
-        height: 48px;
+        height: 50px;
         width: 100%;
         padding: 0 18px;
         border: 2px solid #c9c9c9;
         border-radius: 3px;
         transition: border-color .3s ease-in-out;
-        margin: 1px 0 24px 0;
+        margin: 1px 0 26px 0;
+
+        font-size: 18px;
+        font-family: 'Open Sans', sans-serif;
+        color: rgb(85, 85, 85);
+        line-height: 1.778;
+        text-align: left;
+        box-sizing: border-box;
         
         &:hover
         {
@@ -81,7 +88,7 @@ form
     {
         margin: 5px 0 25px 0;
         height: 48px;
-        width: 540px;
+        width: 100%;
         padding: 0 16px;
         border: 2px solid #c9c9c9;
         border-radius: 3px;
@@ -121,7 +128,7 @@ form
             height: 15px;
             position: absolute;
             top: calc(25px);
-            right: -20px;
+            right: 20px;
             display: block;
             border: solid #c9c9c9;
             border-width: 0 2px 2px 0;
@@ -146,6 +153,7 @@ form
         input
         {
             margin: 15px 0 0 0;
+            cursor: pointer;
         }
         
         label
@@ -167,14 +175,15 @@ form
         
         textarea
         {
-            height: 117px;
-            width: 506px;
+            height: 150px;
+            width: 100%;
             padding: 15px 15px;
             border: 2px solid #c9c9c9;
             border-radius: 3px;
             transition: border-color .3s ease-in-out;
             resize: none;
             margin: 5px 0 25px 0;
+            box-sizing: border-box;
             
             font-size: 18px;
             font-family: 'Open Sans', sans-serif;
@@ -199,6 +208,7 @@ form
             border-radius: 5px;
             padding: 9px 63px;
             background-color: #15a98c;
+            cursor: pointer;
             
             font-size: 19px;
             font-family: "Georgia";

@@ -1,0 +1,119 @@
+@import "vars";
+
+.main_container
+{
+    width: 1000px;
+    margin: 0 auto 18px;
+}
+
+.sidebar
+{
+    width: 330px;
+    margin: 0 60px 0 20px;
+    float: left;
+
+    .image
+    {
+        width: 330px;
+        height: 350px;
+        margin: 210px 0 40px;
+        border-radius: 5px;
+    }
+    
+    h3
+    {
+        @extend %h3_font;
+        color: $main_color !important;
+        margin-bottom: 20px;
+    }
+    
+    li
+    {
+        @extend %main_font;
+        margin: 0 0 15px 20px;
+    }
+    
+    div
+    {
+        margin-bottom: 48px;
+    }
+}
+
+.text
+{
+    width: 570px;
+    float: right;
+    margin-right: 20px;
+    
+    blockquote
+    {
+        margin: 235px 0 112px 3px;
+        
+        p
+        {
+            font-size: 28px;
+            font-family: "Georgia";
+            color: $quote_font_color;
+            font-style: italic;
+            line-height: 1.5;
+            text-align: left;
+            height: auto;
+            margin-bottom: 2px;
+        }
+        
+         span
+        {
+            font-size: 16px;
+            font-family: 'Open Sans', sans-serif;
+            color: $button_font_color;
+            font-weight: 600;
+            line-height: 2.625;
+            text-align: left;
+            margin-left: 3px;
+        }
+    }
+    
+    h1
+    {
+        @extend %h1_font;
+        
+        &:after
+        {
+            display: block;
+            margin: 20px 0 44px 0;
+            content: "";
+            background-color: $main_color;
+            width: 60px;
+            height: 6px;
+            border-radius: 3px;
+        }
+    }
+    
+    h2
+    {
+        @extend %h2_font;
+        margin: 38px 0 16px -2px;
+    }
+    
+    p
+    {
+        @extend %main_font;
+        line-height: 1.69;
+    }
+    
+    .link
+    {
+        margin: 45px 0;
+        
+        a
+        {
+            @extend %main_font;
+            color: $main_color !important;
+        }
+        
+        span
+        {
+            text-decoration: underline;
+        }
+    }
+}

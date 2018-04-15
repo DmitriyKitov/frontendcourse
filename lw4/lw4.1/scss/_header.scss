@@ -1,0 +1,49 @@
+@import "vars";
+
+.header
+{
+    width: 1000px;
+    margin: 0 auto;
+    
+    a
+    {
+        @extend %main_font;
+        color: $main_header_color !important;
+
+        &:hover
+        {
+            color: $button_font_color !important;
+        }
+    }
+    
+    .about_me
+    {
+        margin-left: 20px;
+        @extend %header_button;
+        background-image: url(../icons/about_me.png);
+        &:hover
+        {
+            background-image: url(../icons/about_me_white.png);
+        }
+    }
+    
+    .my_hobby
+    {
+        @extend %header_button;
+        background-image: url(../icons/hobby.png);
+        &:hover
+        {
+            background-image: url(../icons/hobby_white.png);
+        }
+    }
+    
+    .favorite_films
+    {
+        @extend %header_button;
+        background-image: url(../icons/films.png);
+        &:hover
+        {
+            background-image: url(../icons/films_white.png);
+        }
+    }
+}

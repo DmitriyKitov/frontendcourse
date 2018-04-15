@@ -1,0 +1,169 @@
+@import "vars";
+
+
+%input_font
+{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color: $main_font_color;
+    text-align: left;
+}
+
+%form_font
+{
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: $main_header_color;
+    text-align: left;
+}
+
+%input
+{
+    @extend %input_font;
+    box-sizing: border-box;
+    height: 50px;
+    width: 100%;
+    padding: 10px 18px;
+    border: 2px solid $form_main_color;
+    border-radius: 3px;
+    margin: 1px 0 26px 0;
+    
+    transition: border-color .3s;
+    &:hover
+    {
+        border-color: $form_hover_color;
+    }
+
+    &:focus
+    {
+        border-color: $main_color;
+    }
+}
+
+.form
+{
+    h2
+    {
+        margin:40px 0 0 0;
+        @extend %h2_font;
+        font-weight: 300 !important;
+        text-align: center !important;
+
+        &:before
+        {
+            display: inline-block;
+            content: "";
+            width: 200px;
+            height: 1px;
+            background-color: $form_main_color;
+            margin: 0 27px 12px 0;
+        }
+
+        &:after
+        {
+            @extend :before;
+            margin: 0 0 12px 24px;
+        }
+    }
+}
+
+form
+{
+    width: 540px;
+    margin: 68px auto;
+
+    label
+    {
+        @extend %form_font;
+        
+        &:not(.not_require):after
+        {
+            display: inline-block;
+            content: "*";
+            color: red;
+            margin-left: 5px;
+        }
+    }
+    
+    #email, #username
+    {
+        @extend %input;
+    }
+  
+
+    select
+    {
+        -webkit-appearance: none;
+        cursor: pointer;
+        @extend %input;
+    }
+    
+    .select_wrapper
+    {
+        position: relative;
+
+        &:after
+        {
+            content: '';
+            pointer-events: none;
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top: calc(25px);
+            right: 20px;
+            display: block;
+            border: solid $form_main_color;
+            border-width: 0 2px 2px 0;
+            transform: translateY(-50%) rotate(45deg);
+        }
+    }
+
+    .gender
+    {
+        margin: 17px 0 0 0;
+        
+        h3
+        {
+            @extend %form_font;
+        }
+        
+        input
+        {
+            margin: 15px 0 0 0;
+            cursor: pointer;
+        }
+        
+        label
+        {
+            margin: 0 36px 0 5px;
+            cursor: pointer;
+            @extend %input_font;
+            color: $main_header_color !important;
+        }
+    }
+    
+    .message
+    {
+        margin: 35px 0 0 0;
+        
+        textarea
+        {
+            @extend %input;
+            resize: none;
+            height: 150px;
+        }
+        
+        input
+        {
+            margin-top: 20px;
+            padding: 14px 63px;
+            @extend %button;
+            
+            &:hover
+            {
+                background-color: $button_hover_color;
+            }
+        }
+    }
+}

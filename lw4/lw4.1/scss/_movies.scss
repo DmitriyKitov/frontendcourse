@@ -1,0 +1,61 @@
+@import "vars";
+
+.movies
+{
+    width: 100%;
+    background-color: $background_color;
+    padding: 32px 0 60px;
+    text-align: center;
+    
+    .blocks
+    {
+        width: 1200px;
+        margin: 0 auto;
+
+        h2
+        {
+            @extend %h2_font;
+        }
+
+        h3
+        {
+            margin: 20px 0 18px -2px;
+            @extend %h3_font;
+            font-size: 22px !important;
+            font-weight: 700 !important;
+        }
+
+        p
+        {
+            @extend %main_font;
+            font-size: 16px !important;
+            line-height: 1.75;
+        }
+
+        img
+        {
+            border-radius: 5px;
+            margin-top: 30px
+        }
+
+        .block
+        {
+            float: left;
+            width: 285px;
+            margin-right: 20px;
+        }
+
+        .last_block
+        {
+            float: right;
+            width: 285px;
+        }
+    }
+        
+    .button
+    {
+        margin-top: 54px;
+        padding: 14px 55px;
+        @extend %button;
+    }
+}

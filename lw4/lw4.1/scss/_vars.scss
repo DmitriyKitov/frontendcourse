@@ -74,3 +74,42 @@ $form_hover_color: #a6a6a6;
         background-color: $button_hover_color;
     }
 }
+
+%form_font
+{
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: $main_header_color;
+    text-align: left;
+}
+
+%input_font
+{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color: $main_font_color;
+    text-align: left;
+}
+
+%input
+{
+    @extend %input_font;
+    box-sizing: border-box;
+    height: 50px;
+    width: 100%;
+    padding: 10px 18px;
+    border: 2px solid $form_main_color;
+    border-radius: 3px;
+    
+    transition: border-color .3s;
+    &:hover
+    {
+        border-color: $form_hover_color;
+    }
+
+    &:focus
+    {
+        border-color: $main_color;
+    }
+}

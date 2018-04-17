@@ -1,5 +1,3 @@
-@import "vars";
-
 .main_container
 {
     width: 1000px;
@@ -23,7 +21,7 @@
     h3
     {
         @extend %h3_font;
-        color: $main_color !important;
+        color: $main_color;
         margin-bottom: 20px;
     }
     
@@ -108,7 +106,7 @@
         a
         {
             @extend %main_font;
-            color: $main_color !important;
+            color: $main_color;
         }
         
         span

@@ -1,121 +1,168 @@
 .main_container
 {
+    max-width: 100%;
     width: 1000px;
     margin: 0 auto 18px;
-}
-
-.image
-{
-    margin: 210px 0 44px 20px;
-    float: left;
-    width: 330px;
-    height: 350px;
-    border-radius: 5px;
-}
-
-blockquote
-{
-    margin: 235px 0 112px 63px;
-    float: left;
-
-    p
+    
+    .image
     {
-        font-size: 28px;
-        font-family: "Georgia";
-        color: $quote_font_color;
-        font-style: italic;
-        line-height: 1.5;
-        text-align: left;
-        height: auto;
-        margin-bottom: 2px;
+        margin: 0 0 44px 20px;
+        width: 330px;
+        height: 350px;
+        float: left;
+        border-radius: 5px;
     }
 
-     span
+    blockquote
     {
-        font-size: 16px;
-        font-family: 'Open Sans', sans-serif;
-        color: $button_font_color;
-        font-weight: 600;
-        line-height: 2.625;
-        text-align: left;
-        margin-left: 3px;
-    }
-}
+        margin: 0 0 32px 63px;
+        padding: 25px 0 80px;
+        float: left;
 
-.sidebar
-{
-    width: 330px;
-    margin: 0 40px 0 20px;
-    float: left;
-
-    
-    
-    h3
-    {
-        @extend %h3_font;
-        color: $main_color;
-        margin-bottom: 20px;
-    }
-    
-    li
-    {
-        @extend %main_font;
-        margin: 0 0 15px 20px;
-    }
-    
-    div
-    {
-        margin-bottom: 48px;
-    }
-}
-
-.text
-{
-    width: 570px;
-    float: right;
-    margin-right: 20px;
-    
-    h1
-    {
-        @extend %h1_font;
-        
-        &:after
+        p
         {
-            display: block;
-            margin: 20px 0 44px 0;
-            content: "";
-            background-color: $main_color;
-            width: 60px;
-            height: 6px;
-            border-radius: 3px;
+            font-size: 28px;
+            font-family: "Georgia";
+            color: $quote_font_color;
+            font-style: italic;
+            line-height: 1.5;
+            text-align: left;
+            height: auto;
+            margin-bottom: 12px;
+        }
+
+         span
+        {
+            font-size: 16px;
+            font-family: 'Open Sans', sans-serif;
+            color: $button_font_color;
+            font-weight: 600;
+            text-align: left;
+            margin-left: 3px;
         }
     }
-    
-    h2
+
+    .text
     {
-        @extend %h2_font;
-        margin: 38px 0 16px -2px;
-    }
-    
-    p
-    {
-        @extend %main_font;
-        line-height: 1.69;
-    }
-    
-    .link
-    {
-        margin: 45px 0;
-        
-        a
+        width: 570px;
+        max-width: 100%;
+        float: right;
+        margin-right: 20px;
+
+        h1
+        {
+            @extend %h1_font;
+
+            &:after
+            {
+                display: block;
+                margin: 20px 0 44px 0;
+                content: "";
+                background-color: $main_color;
+                width: 60px;
+                height: 6px;
+                border-radius: 3px;
+            }
+        }
+
+        h2
+        {
+            @extend %h2_font;
+            margin: 38px 0 16px -2px;
+        }
+
+        p
         {
             @extend %main_font;
+            line-height: 1.69;
+        }
+
+        .link
+        {
+            margin: 45px 0;
+
+            a
+            {
+                @extend %main_font;
+                color: $main_color;
+            }
+
+            span
+            {
+                text-decoration: underline;
+            }
+        }
+    }
+    
+    .sidebar
+    {
+        width: 330px;
+        margin: 0 40px 0 20px;
+        float: left;
+
+        h3
+        {
+            @extend %h3_font;
             color: $main_color;
+            margin-bottom: 20px;
+        }
+
+        li
+        {
+            @extend %main_font;
+            margin: 0 0 15px 20px;
+        }
+
+        div
+        {
+            margin-bottom: 48px;
+        }
+    }
+    
+    @media screen and (max-width: 1200px)
+    {
+        width: 570px;
+        margin: 0 auto;
+        
+        .image
+        {
+            float: none;
+            margin: 0 auto;
         }
         
-        span
+        blockquote
         {
-            text-decoration: underline;
+            float: none;
+            margin: 0 auto;
+            
+            p
+            {
+                color: $main_font_color;
+            }
+            
+            span
+            {
+                color: $main_header_color;
+            }
+        }
+        
+        .text
+        {
+            margin: 0 auto;
+            width: 100%;
+        }
+        
+        .sidebar
+        {
+            width: 100%;
+            float: none;
+            margin: 0;
+            
+            div
+            {
+                width: 50%;
+                float: left;
+            }
         }
     }
 }

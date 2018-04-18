@@ -44,4 +44,10 @@
             background-image: url(../icons/films_white.png);
         }
     }
+    
+    @media screen and (max-width: 1200px)
+    {
+        width: 570px;
+        margin: 0 auto 210px;
+    }
 }

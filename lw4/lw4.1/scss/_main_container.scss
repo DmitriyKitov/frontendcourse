@@ -121,18 +121,30 @@
     
     @media screen and (max-width: 1200px)
     {
-        width: 570px;
+        width: 1000px;
+        max-width: 90%;
+        box-sizing: border-box;
         margin: 0 auto;
         
         .image
         {
             float: none;
+            width: 500px;
+            max-width: 50%;
+            height: auto;
             margin: 0 auto;
+            
+            img
+            {
+                
+                width: 100%
+            }
         }
         
         blockquote
         {
             float: none;
+            width: 500px;
             margin: 0 auto;
             
             p
@@ -156,6 +168,7 @@
         {
             width: 100%;
             float: none;
+            overflow: hidden;
             margin: 0;
             
             div

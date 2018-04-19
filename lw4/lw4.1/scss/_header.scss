@@ -46,10 +46,11 @@
         }
     }
     
+    @extend %clear_block;
+    
     @media screen and (max-width: 1200px)
     {
         width: 570px;
-        max-width: 100%;
         margin: 0 auto 100px;
         .about_me
         {
@@ -57,7 +58,7 @@
         }
     }
     
-    @media screen and (max-width: 550px)
+    @media screen and (max-width: 560px)
     {
         width: 100%;
     }

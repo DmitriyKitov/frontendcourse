@@ -126,6 +126,8 @@
         }
     }
     
+    @extend %clear_block;
+    
     @media screen and (max-width: 1200px)
     {
         .image

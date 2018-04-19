@@ -53,12 +53,8 @@
                 margin-right: 1.6%;
             }
         }
-
-        .last_block
-        {
-            float: left;
-            width: 285px;
-        }
+        
+        @extend %clear_block;
     }
         
     .button

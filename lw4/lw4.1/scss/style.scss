@@ -17,4 +17,9 @@ body
     background-size: auto;
     background-repeat: no-repeat;
     background-position: 0 50px;
+    
+    @media screen and (max-width: 720px)
+    {
+        background-position: 0 150px;
+    }
 }

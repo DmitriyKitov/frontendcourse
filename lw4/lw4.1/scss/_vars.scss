@@ -56,6 +56,11 @@ $form_hover_color: #a6a6a6;
     {
         background-color: $main_color;
     }
+    
+    @media screen and (max-width: 720px)
+    {
+        width: 100%;
+    }
 }
 
 %button

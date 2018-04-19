@@ -50,4 +50,14 @@
         width: 570px;
         margin: 0 auto 100px;
     }
+    
+    @media screen and (max-width: 720px)
+    {
+        width: 100%;
+        
+        .about_me
+        {
+            margin: 0;
+        }
+    }
 }

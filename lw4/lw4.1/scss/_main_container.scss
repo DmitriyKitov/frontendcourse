@@ -9,8 +9,14 @@
         margin: 0 0 44px 20px;
         width: 330px;
         height: 350px;
+        overflow: hidden;
         float: left;
         border-radius: 5px;
+        
+        img
+        {
+            width: 100%;
+        }
     }
 
     blockquote
@@ -126,6 +132,7 @@
         {
             float: none;
             width: 52%;
+            overflow: hidden;
             height: auto;
             margin: 0 auto;
             

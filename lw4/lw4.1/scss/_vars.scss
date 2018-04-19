@@ -47,6 +47,7 @@ $form_hover_color: #a6a6a6;
 %header_button
 {
     padding: 15px 22px 14px 45px;
+    box-sizing: border-box;
     float: left;
     background-repeat: no-repeat;
     background-position: 20px 18px;

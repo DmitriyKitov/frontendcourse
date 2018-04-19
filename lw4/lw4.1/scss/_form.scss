@@ -1,5 +1,7 @@
 .form
 {
+    max-width: 100%;
+    
     h2
     {
         margin:40px 0 0 0;
@@ -12,9 +14,15 @@
             display: inline-block;
             content: "";
             width: 200px;
+            max-width: 20%;
             height: 1px;
             background-color: $form_main_color;
             margin: 0 27px 12px 0;
+            
+            @media screen and (max-width: 550px)
+            {
+                width: 0;
+            }
         }
 
         &:after
@@ -28,6 +36,7 @@
 form
 {
     width: 540px;
+    max-width: 95%;
     margin: 67px auto 52px;
 
     label

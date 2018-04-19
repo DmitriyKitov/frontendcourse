@@ -22,6 +22,7 @@
             @media screen and (max-width: 550px)
             {
                 width: 0;
+                margin: 0;
             }
         }
 
@@ -29,6 +30,12 @@
         {
             @extend :before;
             margin: 0 0 12px 24px;
+            
+            @media screen and (max-width: 550px)
+            {
+                width: 0;
+                margin: 0;
+            }
         }
     }
 }

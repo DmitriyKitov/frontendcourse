@@ -21,19 +21,21 @@
 
     blockquote
     {
-        margin: 0 0 32px 63px;
+        margin: 0 20px 32px 63px;
         padding: 25px 0 80px;
+        width: 567px;
         float: left;
 
         p
         {
+            
             font-size: 28px;
+            word-wrap: break-word;
             font-family: "Georgia";
             color: $quote_font_color;
             font-style: italic;
             line-height: 1.5;
             text-align: left;
-            height: auto;
             margin-bottom: 12px;
         }
 
@@ -147,7 +149,7 @@
         blockquote
         {
             float: none;
-            width: 520px;
+            width: 536px;
             max-width: 90%;
             margin: 0 auto;
             

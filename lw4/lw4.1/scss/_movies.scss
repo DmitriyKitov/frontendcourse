@@ -48,6 +48,7 @@
         {
             float: left;
             width: 23.75%;
+            margin-bottom: 4.5%;
             &:not(:last-child)
             {
                 margin-right: 1.6%;
@@ -59,7 +60,6 @@
         
     .button
     {
-        margin-top: 54px;
         padding: 14px 55px;
         @extend %button;
     }

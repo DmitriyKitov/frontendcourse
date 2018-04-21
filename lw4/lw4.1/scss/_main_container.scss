@@ -178,8 +178,12 @@
             
             div
             {
-                width: 50%;
+                width: 48%;
                 float: left;
+                &:first-child
+                {
+                    margin-right: 4%;
+                }
             }
         }
     }

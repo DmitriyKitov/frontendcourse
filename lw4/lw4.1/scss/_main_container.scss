@@ -3,7 +3,7 @@
     max-width: 90%;
     width: 1000px;
     margin: 0 auto 18px;
-    
+
     .image
     {
         margin: 0 0 44px 20px;
@@ -12,7 +12,7 @@
         overflow: hidden;
         float: left;
         border-radius: 5px;
-        
+
         img
         {
             width: 100%;
@@ -28,7 +28,7 @@
 
         p
         {
-            
+
             font-size: 28px;
             font-family: "Georgia";
             color: $quote_font_color;
@@ -38,7 +38,7 @@
             margin-bottom: 12px;
         }
 
-         span
+        span
         {
             font-size: 16px;
             font-family: 'Open Sans', sans-serif;
@@ -100,7 +100,7 @@
             }
         }
     }
-    
+
     .sidebar
     {
         width: 330px;
@@ -126,9 +126,9 @@
             margin-bottom: 48px;
         }
     }
-    
+
     @extend %clear_block;
-    
+
     @media screen and (max-width: 1200px)
     {
         .image
@@ -138,44 +138,44 @@
             overflow: hidden;
             height: auto;
             margin: 0 auto;
-            
+
             img
             {
                 width: 100%
             }
         }
-        
+
         blockquote
         {
             float: none;
             width: 536px;
             max-width: 90%;
             margin: 0 auto;
-            
+
             p
             {
                 color: $main_font_color;
             }
-            
+
             span
             {
                 color: $main_header_color;
             }
         }
-        
+
         .text
         {
             margin: 0 auto;
             width: 100%;
         }
-        
+
         .sidebar
         {
             width: 100%;
             float: none;
             overflow: hidden;
             margin: 0;
-            
+
             div
             {
                 width: 48%;
@@ -187,7 +187,7 @@
             }
         }
     }
-    
+
     @media screen and (max-width: 720px)
     {
         .image
@@ -195,7 +195,7 @@
             width: 330px;
             max-width: 95%;
         }
-        
+
         .sidebar
         {
             div

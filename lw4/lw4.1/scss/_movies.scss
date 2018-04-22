@@ -4,7 +4,7 @@
     background-color: $background_color;
     padding: 32px 0 60px;
     text-align: center;
-    
+
     .blocks
     {
         width: 1200px;
@@ -36,7 +36,7 @@
             width: 100%;
             overflow: hidden;
         }
-        
+
         img
         {
             border-radius: 5px;
@@ -53,41 +53,40 @@
                 margin-right: 1.6%;
             }
         }
-        
+
         @extend %clear_block;
     }
-        
+
     .button
     {
         padding: 14px 55px;
         margin-top: 54px;
         @extend %button;
     }
-    
+
     @media screen and (max-width: 1200px)
     {
-        
+
         .blocks
         {
             width: 90%;
-        
+
             .block
             {
                 width: 48%;
                 margin-bottom: 4.5%;
-                
+
                 &:not(:last-child)
                 {
                     margin-right: 0;
                 }
-                
+
                 &:not(.not_require)
                 {
                     margin-right: 4%;
                 }
-                
-                
-                 .block_image
+
+                .block_image
                 {
                     width: 100%;
 
@@ -98,18 +97,18 @@
                 }
             }
         }
-        
+
         .button
         {
             margin-top: 30px;
         }
     }
-    
-     @media screen and (max-width: 720px)
+
+    @media screen and (max-width: 720px)
     {
         .blocks
         {
-             .block
+            .block
             {
                 width: 100%;
                 margin-right: 0;

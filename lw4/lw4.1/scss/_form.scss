@@ -1,10 +1,10 @@
 .form
 {
     max-width: 100%;
-    
+
     h2
     {
-        margin:40px 0 0 0;
+        margin: 40px 0 0 0;
         @extend %h2_font;
         font-weight: 300;
         text-align: center;
@@ -18,7 +18,7 @@
             height: 1px;
             background-color: $form_main_color;
             margin: 0 27px 12px 0;
-            
+
             @media screen and (max-width: 550px)
             {
                 width: 0;
@@ -30,7 +30,7 @@
         {
             @extend :before;
             margin: 0 0 12px 24px;
-            
+
             @media screen and (max-width: 550px)
             {
                 width: 0;
@@ -49,7 +49,7 @@ form
     label
     {
         @extend %form_font;
-        
+
         &:not(.not_require):after
         {
             display: inline-block;
@@ -58,13 +58,12 @@ form
             margin-left: 5px;
         }
     }
-    
+
     #email, #username
     {
         margin: 6px 0 26px;
         @extend %input;
     }
-  
 
     select
     {
@@ -74,7 +73,7 @@ form
         cursor: pointer;
         @extend %input;
     }
-    
+
     .select_wrapper
     {
         position: relative;
@@ -96,18 +95,18 @@ form
 
     .gender
     {
-        
+
         h3
         {
             @extend %form_font;
         }
-        
+
         input
         {
             margin: 17px 0 47px 0;
             cursor: pointer;
         }
-        
+
         label
         {
             margin: 0 37px 0 4px;
@@ -116,7 +115,7 @@ form
             color: $main_header_color;
         }
     }
-    
+
     .message
     {
         textarea
@@ -126,13 +125,13 @@ form
             resize: none;
             height: 150px;
         }
-        
+
         input
         {
 
             padding: 14px 63px;
             @extend %button;
-            
+
             &:hover
             {
                 background-color: $button_hover_color;

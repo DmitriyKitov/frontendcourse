@@ -11,11 +11,11 @@ $form_hover_color: #a6a6a6;
 %clear_block
 {
     &:after
-    {
-        content: "";
-        clear: both;
-        display: block;
-    }
+     {
+         content: "";
+         clear: both;
+         display: block;
+     }
 }
 
 %main_font

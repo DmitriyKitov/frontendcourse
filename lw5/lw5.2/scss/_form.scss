@@ -1,0 +1,141 @@
+.form
+{
+    max-width: 100%;
+
+    h2
+    {
+        margin: 40px 0 0 0;
+        @extend %h2_font;
+        font-weight: 300;
+        text-align: center;
+
+        &:before
+        {
+            display: inline-block;
+            content: "";
+            width: 200px;
+            max-width: 20%;
+            height: 1px;
+            background-color: $form_main_color;
+            margin: 0 27px 12px 0;
+
+            @media screen and (max-width: 550px)
+            {
+                width: 0;
+                margin: 0;
+            }
+        }
+
+        &:after
+        {
+            @extend :before;
+            margin: 0 0 12px 24px;
+
+            @media screen and (max-width: 550px)
+            {
+                width: 0;
+                margin: 0;
+            }
+        }
+    }
+}
+
+form
+{
+    width: 540px;
+    max-width: 95%;
+    margin: 67px auto 52px;
+
+    label
+    {
+        @extend %form_font;
+
+        &:not(.not_require):after
+        {
+            display: inline-block;
+            content: " *";
+            color: red;
+            margin-left: 5px;
+        }
+    }
+
+    #email, #username
+    {
+        margin: 6px 0 26px;
+        @extend %input;
+    }
+
+    select
+    {
+        margin: 7px 0 44px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        cursor: pointer;
+        @extend %input;
+    }
+
+    .select_wrapper
+    {
+        position: relative;
+
+        &:after
+        {
+            content: '';
+            pointer-events: none;
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            top: 20px;
+            right: 21px;
+            border: solid $form_main_color;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+    }
+
+    .gender
+    {
+
+        h3
+        {
+            @extend %form_font;
+        }
+
+        input
+        {
+            margin: 17px 0 47px 0;
+            cursor: pointer;
+        }
+
+        label
+        {
+            margin: 0 37px 0 4px;
+            cursor: pointer;
+            @extend %input_font;
+            color: $main_header_color;
+        }
+    }
+
+    .message
+    {
+        textarea
+        {
+            margin: 6px 0 46px 0;
+            @extend %input;
+            resize: none;
+            height: 150px;
+        }
+
+        input
+        {
+
+            padding: 14px 63px;
+            @extend %button;
+
+            &:hover
+            {
+                background-color: $button_hover_color;
+            }
+        }
+    }
+}

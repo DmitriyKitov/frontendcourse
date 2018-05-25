@@ -1,0 +1,13 @@
+.footer
+{
+    width: 100%;
+    background-color: $background_color;
+
+    p
+    {
+        @extend %main_font;
+        font-size: 16px;
+        text-align: center;
+        padding: 22px 5%;
+    }
+}

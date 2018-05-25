@@ -1,0 +1,31 @@
+@import "reset";
+@import "vars";
+@import "header";
+@import "main";
+@import "movies";
+@import "form";
+@import "footer";
+
+.clear
+{
+    clear: both;
+}
+
+body
+{
+    max-width: 100%;
+    background-image: url(../images/backgroung.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 0 50px;
+
+    @media screen and (max-width: 1200px)
+    {
+        background-position: -425px 50px;
+    }
+
+    @media screen and (max-width: 560px)
+    {
+        background-position: -550px 150px;
+    }
+}

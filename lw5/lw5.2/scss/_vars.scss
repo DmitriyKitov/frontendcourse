@@ -1,0 +1,131 @@
+$background_color: #f9f9f9;
+$main_color: #15a98c;
+$main_font_color: #555;
+$main_header_color: #333;
+$quote_font_color: #fff;
+$button_hover_color: #098d72;
+$button_font_color: #f5f5f5;
+$form_main_color: #c9c9c9;
+$form_hover_color: #a6a6a6;
+
+%clear_block
+{
+    &:after
+     {
+         content: "";
+         clear: both;
+         display: block;
+     }
+}
+
+%main_font
+{
+    color: $main_font_color;
+    font-size: 19px;
+    font-family: "Georgia";
+    text-decoration: none;
+    text-align: left;
+}
+
+%h1_font
+{
+    color: $main_header_color;
+    font-size: 48px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-align: left;
+}
+
+%h2_font
+{
+    color: $main_header_color;
+    font-size: 36px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    text-align: left;
+}
+
+%h3_font
+{
+    color: $main_header_color;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-align: left;
+}
+
+%header_button
+{
+    padding: 15px 22px 14px 45px;
+    box-sizing: border-box;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: 20px 18px;
+    transition: background-color .1s;
+
+    &:hover
+    {
+        background-color: $main_color;
+    }
+
+    @media screen and (max-width: 560px)
+    {
+        width: 100%;
+    }
+}
+
+%button
+{
+    display: inline-block;
+    background-color: $main_color;
+    border: 1px;
+    border-radius: 5px;
+
+    @extend %main_font;
+    color: $button_font_color;
+
+    transition: background-color .1s;
+    &:hover
+    {
+        background-color: $button_hover_color;
+    }
+}
+
+%form_font
+{
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: $main_header_color;
+    text-align: left;
+}
+
+%input_font
+{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color: $main_font_color;
+    text-align: left;
+}
+
+%input
+{
+    @extend %input_font;
+    box-sizing: border-box;
+    height: 50px;
+    width: 100%;
+    padding: 10px 18px;
+    border: 2px solid $form_main_color;
+    border-radius: 3px;
+
+    transition: border-color .3s;
+    &:hover
+    {
+        border-color: $form_hover_color;
+    }
+
+    &:focus
+    {
+        border-color: $main_color;
+    }
+}
